@@ -1,3 +1,7 @@
+# moonshot_ecp_test
+This is a demo, based on dockerized-idp-testbed, demonstrating how to configure a Moonshot IDP (FreeRADIUS) to use SAML ECP
+to authenticate users and get a SAML Assertion.
+
 # dockerized-idp-testbed
 
 Used to validate the following Unicon docker images:
