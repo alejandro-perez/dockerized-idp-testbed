@@ -38,7 +38,7 @@
                 <ref bean="SAML1.AttributeQuery" />
                 <ref bean="SAML1.ArtifactResolution" />
                 <bean parent="SAML2.SSO" p:postAuthenticationFlows="attribute-release" />
-                <ref bean="SAML2.ECP" />
+                <bean parent="SAML2.ECP" p:encryptAssertions="false"/>
                 <ref bean="SAML2.Logout" />
                 <ref bean="SAML2.AttributeQuery" />
                 <ref bean="SAML2.ArtifactResolution" />

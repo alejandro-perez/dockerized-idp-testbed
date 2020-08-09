@@ -29,3 +29,15 @@ sn: aff
 cn: St aff
 mail: staff1@idptestbed.edu
 userPassword: password
+
+dn: uid=alice@test.org,ou=People,dc=idptestbed
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+givenName: St
+uid: alice@test.org
+sn: aff
+cn: St aff
+mail: alice@test.org
+userPassword: password

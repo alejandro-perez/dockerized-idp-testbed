@@ -1,0 +1,22 @@
+#
+# Make sure the PYTHONPATH environmental variable contains the
+# directory(s) for the modules listed below.
+#
+# Uncomment any func_* which are included in your module. If
+# rlm_python is called for a section which does not have
+# a function defined, it will return NOOP.
+#
+python3 moonshot_ecp {
+	#  Path to the python modules
+	#
+	#  Note that due to limitations on Python, this configuration
+	#  item is GLOBAL TO THE SERVER.  That is, you cannot have two
+	#  instances of the python module, each with a different path.
+	#
+	python_path="${modconfdir}/${.:name}"
+	module = moonshot_ecp
+	pass_all_vps_dict = yes
+
+	mod_authenticate = ${.module}
+	func_authenticate = authenticate
+}
